@@ -7,6 +7,14 @@ var gulp = require('gulp'),
 var jsSources = [
     //añade aquí archivos .js para concatenar en el script final
     //'components/scripts/*******.js'
+    'components/scripts/bootstrap.min.js',
+    'components/scripts/classie.js',
+    'components/scripts/custom.js',
+    'components/scripts/elastic_grid.js',
+    'components/scripts/elastic_grid.encode.js',
+    'components/scripts/elastic_grid.min.js',
+    'components/scripts/jquery.elastislide.js',
+    'components/scripts/modernizr.custom.js'
 ];
 var sassSources = ['components/sass/style.scss'];
 
@@ -26,4 +34,11 @@ gulp.task('compass', function() {
         }))
         .on('error', gutil.log)
         .pipe(gulp.dest('builds/development/css'))
+});
+
+gulp.task('default', ['js', 'compass']);
+
+gulp.task('watch', function() {
+    gulp.watch(jsSources, ['js']);
+    gulp.watch('components/sass/*.scss', ['compass']);
 });
