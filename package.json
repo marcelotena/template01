@@ -1,0 +1,10 @@
+{
+  "name": "7dos",
+  "version": "0.0.1",
+  "description": "7dos.org webpage",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Marcelo Tena Vicente"
+}
