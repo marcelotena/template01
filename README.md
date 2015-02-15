@@ -1,0 +1,3 @@
+# 7dos template
+
+Plantilla base con SASS, Compass, Browserify...
