@@ -9,8 +9,10 @@
   "author": "Marcelo Tena Vicente",
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-coffee": "^2.3.1",
+    "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.5.0",
-    "gulp-util": "^3.0.3"
+    "gulp-util": "^3.0.3",
+    "jquery": "^2.1.3",
+    "mustache": "^1.0.0"
   }
 }
